@@ -1,0 +1,16 @@
+{% load static %}
+
+<html>
+
+<head>
+    <title>die or die детали</title>
+    <link rel="shortcut icon" href="{% static 'post/image/favicon-32x32.png' %}">
+</head>
+
+<body>
+    <h1>{{ post.update_header }}</h1>
+    <img src="{{ post.img_update.url }}"></a>
+    <p>{{ post.description_of_the_update }}</p>
+</body>
+
+</html>
