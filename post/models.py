@@ -14,3 +14,8 @@ class GamePost(models.Model):
         verbose_name = 'пост'
         verbose_name_plural = 'посты'
     
+class Comments(models.Model):
+    email = models.EmailField()
+    name = models.CharField(max_length=100)
+    text = models.TextField()
+    belonging = models.ForeignKey
