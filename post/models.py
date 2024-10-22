@@ -18,4 +18,11 @@ class Comments(models.Model):
     email = models.EmailField()
     name = models.CharField(max_length=100)
     text = models.TextField()
-    belonging = models.ForeignKey
+    belonging = models.ForeignKey(GamePost, verbose_name="Принадлежность", on_delete=models.CASCADE)
+    
+    def __str__(self) -> str:
+        return self.name
+    
+    class Meta:
+        verbose_name = 'коментарий'
+        verbose_name_plural = 'коментарии'
