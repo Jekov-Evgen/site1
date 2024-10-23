@@ -4,16 +4,45 @@
 <head>
     <title>die or die</title>
     <link rel="shortcut icon" href="{% static 'post/image/favicon-32x32.png' %}">
+    <link rel="stylesheet" href="{% static "post/css/home.css" %}">
 </head>
 
 <body>
-    {% for post in post %}
-        <h1>
-            <a href="{{ post.id }}">{{ post.update_header }}</a>
-        </h1>
-        <img src="{{ post.img_update.url }}">
-        <p>{{ post.description_of_the_update }}</p>
-    {% endfor %}
+
+    <header class="site-header">
+        <div class="logo">
+            <h1>Die or Die</h1>
+        </div>
+        <nav class="main-nav">
+            <ul>
+                <li><a href="/">Home</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        {% for post in post %}
+            <section class="post">
+                <h1>
+                    <a href="{{ post.id }}">{{ post.update_header }}</a>
+                </h1>
+                <img src="{{ post.img_update.url }}" alt="Image for {{ post.update_header }}">
+                <p>{{ post.description_of_the_update }}</p>
+            </section>
+        {% endfor %}
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-content">
+            <p>Enter the world where every step can be the last.</p>
+            <div class="social-links">
+                <a href="#">YouTube</a> |
+                <a href="#">TikTok</a>
+            </div>
+        </div>
+        <p>&copy; 2024 Die or Die. All rights reserved.</p>
+    </footer>
+
 </body>
 
 </html>

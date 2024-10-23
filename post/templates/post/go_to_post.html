@@ -3,69 +3,90 @@
 <html>
 
 <head>
-    <title>die or die детали</title>
+    <title>die or die detail</title>
     <link rel="shortcut icon" href="{% static 'post/image/favicon-32x32.png' %}">
+    <link rel="stylesheet" href="{% static "post/css/go_to_post.css" %}">
 </head>
 
 <body>
-    <div class="post">
 
+    <header class="site-header">
+        <div class="logo">
+            <h1>Die or Die</h1>
+        </div>
+        <nav class="main-nav">
+            <ul>
+                <li><a href="/">Home</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="post">
         <div class="post_head">
             <h1>{{ post.update_header }}</h1>
         </div>
 
         <div class="post_img">
-            <img src="{{ post.img_update.url }}"></a>
+            <img src="{{ post.img_update.url }}" alt="Изображение для {{ post.update_header }}">
         </div>
 
         <div class="post_text">
             <p>{{ post.description_of_the_update }}</p>
         </div>
-
     </div>
 
     <div class="comment">
-
         <div class="comment_head">
-            <h3>Ваше мнение или предложение</h3>
+            <h3>Your opinion or suggestion</h3>
         </div>
-        
+
         <div class="comment_form">
-            <form action="{% url "comment" post.id %}" method="post">
+            <form action="{% url 'comment' post.id %}" method="post">
                 {% csrf_token %}
 
                 <div class="test_com">
-                    <label>Введи свой комментарий</label>
-                    <textarea name="text"></textarea>
+                    <label for="comment_text">Enter your comment</label>
+                    <textarea name="text" id="comment_text" placeholder="your comment..."></textarea>
                 </div>
 
-                <div class ="test_nick">
-                    <label>Введи свой ник</label>
-                    <input type="text" name="name">
+                <div class="test_nick">
+                    <label for="nickname">Enter your nickname</label>
+                    <input type="text" name="name" id="nickname" placeholder="your nickname...">
                 </div>
 
                 <div class="com_email">
-                    <label>Введи свой email, тогда я смогу связаться с тобой и обговорить твою идею</label>
-                    <input type="email" name="email">
+                    <label for="email">Enter your email, then I can contact you and discuss your idea</label>
+                    <input type="email" name="email" id="email" placeholder="your email...">
                 </div>
 
                 <div class="com_but">
-                    <input type="submit">
+                    <input type="submit" value="Send">
                 </div>
-
             </form>
         </div>
 
         <div class="all_comment">
+            <h3>Comments</h3>
             {% for comm in comments %}
-                <div>
+                <div class="comment_block">
                     <h4>{{ comm.name }}</h4>
                     <p>{{ comm.text }}</p>
                 </div>
             {% endfor %}
         </div>
-
     </div>
+
+    <footer class="site-footer">
+        <div class="footer-content">
+            <p>Enter the world where every step can be the last.</p>
+            <div class="social-links">
+                <a href="#">YouTube</a> |
+                <a href="#">TikTok</a>
+            </div>
+        </div>
+        <p>&copy; 2024 Die or Die. All rights reserved.</p>
+    </footer>
+
 </body>
 
 </html>

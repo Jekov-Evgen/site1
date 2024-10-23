@@ -1,0 +1,219 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #1e1e1e;
+    color: #e0e0e0;
+}
+
+h1, h2, h3, p {
+    margin: 0;
+    padding: 0;
+}
+
+/* Добавляем немного больше отступов для текста */
+h1, h2, h3, p {
+    margin-bottom: 25px; /* Увеличиваем на 5px */
+}
+
+a {
+    text-decoration: none;
+    color: #d35400;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #e74c3c;
+}
+
+.site-header {
+    background-color: #121212; 
+    padding: 35px 0; /* Увеличиваем верхний и нижний отступ на 5px */
+    text-align: center;
+    border-bottom: 2px solid #d35400;
+}
+
+.site-header .logo h1 {
+    font-size: 36px;
+    color: #d35400;
+    letter-spacing: 5px;
+    margin: 0;
+    text-transform: uppercase;
+}
+
+.main-nav ul {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 35px; /* Увеличиваем отступ снизу на 5px */
+}
+
+.main-nav ul li {
+    display: inline-block;
+    margin: 0 25px; /* Увеличиваем промежутки между элементами навигации на 5px */
+}
+
+.main-nav ul li a {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.post {
+    margin: 45px auto; /* Увеличиваем расстояние между постами на 5px */
+    width: 70%; 
+    max-width: 600px; 
+    background-color: #262626; 
+    padding: 35px; /* Увеличиваем внутренние отступы на 5px */
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.7);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.post:hover {
+    transform: scale(1.02);
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.9);
+}
+
+.post h1 {
+    font-size: 24px;
+    color: #d35400;
+    margin-bottom: 25px; /* Увеличиваем на 5px */
+}
+
+.post img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 25px; /* Увеличиваем на 5px */
+    transition: opacity 0.3s ease;
+}
+
+.post img:hover {
+    opacity: 0.85;
+}
+
+.post p {
+    font-size: 16px;
+    line-height: 1.8;
+    color: #e0e0e0;
+}
+
+.comment {
+    width: 70%; 
+    max-width: 600px; 
+    margin: 65px auto; /* Увеличиваем отступ сверху на 5px */
+    background-color: #1b1b1b;
+    padding: 45px; /* Увеличиваем внутренний отступ на 5px */
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.7);
+}
+
+.comment_head h3 {
+    color: #d35400;
+    margin-bottom: 30px; /* Увеличиваем на 5px */
+    font-size: 24px;
+}
+
+.comment_form label {
+    margin-bottom: 20px; /* Увеличиваем на 5px */
+    color: #e0e0e0;
+}
+
+.comment_form textarea,
+.comment_form input[type="text"],
+.comment_form input[type="email"] {
+    background-color: #262626;
+    border: 1px solid #444;
+    color: #e0e0e0;
+    padding: 20px; /* Увеличиваем внутренний отступ на 5px */
+    margin-bottom: 30px; /* Увеличиваем отступ между полями на 5px */
+    border-radius: 5px;
+    width: 100%;
+}
+
+.comment_form textarea {
+    height: 175px; /* Увеличиваем высоту текстового поля на 5px */
+    resize: none;
+}
+
+.comment_form input[type="submit"] {
+    background-color: #d35400;
+    color: #fff;
+    border: none;
+    padding: 17px 30px; /* Увеличиваем размеры кнопки на 5px */
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.comment_form input[type="submit"]:hover {
+    background-color: #e74c3c;
+}
+
+.all_comment {
+    margin-top: 55px; /* Увеличиваем отступ сверху на 5px */
+}
+
+.all_comment h3 {
+    color: #d35400;
+    margin-bottom: 30px; /* Увеличиваем на 5px */
+    font-size: 24px;
+}
+
+.comment_block {
+    background-color: #262626;
+    padding: 35px; /* Увеличиваем внутренние отступы на 5px */
+    border-radius: 5px;
+    margin-bottom: 30px; /* Увеличиваем отступ между комментариями на 5px */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.comment_block h4 {
+    color: #d35400;
+    margin-bottom: 20px; /* Увеличиваем на 5px */
+}
+
+.comment_block p {
+    color: #e0e0e0;
+    font-size: 16px;
+    line-height: 1.7;
+}
+
+.site-footer {
+    background-color: #121212;
+    padding: 35px; /* Увеличиваем внутренний отступ на 5px */
+    text-align: center;
+    border-top: 2px solid #d35400;
+}
+
+.footer-content {
+    margin-bottom: 25px; /* Увеличиваем отступ на 5px */
+}
+
+.footer-content p {
+    font-size: 18px;
+    color: #d35400;
+}
+
+.social-links a {
+    font-size: 16px;
+    color: #d35400;
+    margin: 0 20px; /* Увеличиваем отступы между иконками соцсетей на 5px */
+}
+
+.social-links a:hover {
+    color: #e74c3c;
+}
+
+@media (max-width: 768px) {
+    .post, .comment {
+        padding: 25px; /* Увеличиваем на 5px для мобильных устройств */
+    }
+
+    .post h1 {
+        font-size: 28px;
+    }
+
+    .main-nav ul li {
+        display: block;
+        margin: 20px 0; /* Увеличиваем отступы для мобильных устройств на 5px */
+    }
+}
