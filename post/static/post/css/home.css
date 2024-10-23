@@ -23,7 +23,7 @@ a:hover {
 
 .site-header {
     background-color: #121212; 
-    padding: 25px 0; /* Увеличиваем отступы на 5px */
+    padding: 25px 0; 
     text-align: center;
     border-bottom: 2px solid #d35400; 
 }
@@ -43,7 +43,7 @@ a:hover {
 
 .main-nav ul li {
     display: inline-block;
-    margin: 0 20px; /* Увеличиваем отступы между элементами меню */
+    margin: 0 20px; 
 }
 
 .main-nav ul li a {
@@ -52,16 +52,16 @@ a:hover {
 }
 
 main {
-    padding: 45px 0; /* Увеличиваем отступ сверху и снизу на 5px */
+    padding: 45px 0; 
     background-color: #1b1b1b; 
 }
 
 .post {
-    margin: 25px auto; /* Увеличиваем отступ сверху и снизу на 5px */
+    margin: 25px auto; 
     width: 70%; 
     max-width: 600px; 
     background-color: #262626; 
-    padding: 25px; /* Увеличиваем внутренний отступ на 5px */
+    padding: 25px; 
     border-radius: 10px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.7); 
     transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -76,13 +76,13 @@ main {
     font-size: 24px;
     color: #d35400; 
     display: block;
-    margin-bottom: 20px; /* Увеличиваем отступ на 5px */
+    margin-bottom: 20px; 
 }
 
 .post img {
     width: 100%;
     border-radius: 10px;
-    margin-bottom: 20px; /* Увеличиваем отступ на 5px */
+    margin-bottom: 20px; 
     transition: opacity 0.3s ease;
 }
 
@@ -92,19 +92,19 @@ main {
 
 .post p {
     font-size: 16px;
-    line-height: 1.7; /* Увеличиваем межстрочный интервал на 0.1 */
+    line-height: 1.7; 
     color: #e0e0e0;
 }
 
 .site-footer {
     background-color: #121212;
-    padding: 25px; /* Увеличиваем внутренний отступ на 5px */
+    padding: 25px; 
     text-align: center;
     border-top: 2px solid #d35400; 
 }
 
 .footer-content {
-    margin-bottom: 15px; /* Увеличиваем отступ на 5px */
+    margin-bottom: 15px; 
 }
 
 .footer-content p {
@@ -115,7 +115,7 @@ main {
 .social-links a {
     font-size: 16px;
     color: #d35400;
-    margin: 0 15px; /* Увеличиваем отступы между иконками на 5px */
+    margin: 0 15px; 
 }
 
 .social-links a:hover {
@@ -124,7 +124,7 @@ main {
 
 @media (max-width: 768px) {
     .post {
-        padding: 20px; /* Увеличиваем внутренний отступ на 5px */
+        padding: 20px; 
     }
 
     .post h1 a {
@@ -133,6 +133,6 @@ main {
 
     .main-nav ul li {
         display: block;
-        margin: 15px 0; /* Увеличиваем отступы на мобильных устройствах на 5px */
+        margin: 15px 0; 
     }
 }

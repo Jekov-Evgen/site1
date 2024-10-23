@@ -11,9 +11,9 @@ h1, h2, h3, p {
     padding: 0;
 }
 
-/* Добавляем немного больше отступов для текста */
+
 h1, h2, h3, p {
-    margin-bottom: 25px; /* Увеличиваем на 5px */
+    margin-bottom: 25px; 
 }
 
 a {
@@ -28,7 +28,7 @@ a:hover {
 
 .site-header {
     background-color: #121212; 
-    padding: 35px 0; /* Увеличиваем верхний и нижний отступ на 5px */
+    padding: 35px 0; 
     text-align: center;
     border-bottom: 2px solid #d35400;
 }
@@ -44,12 +44,12 @@ a:hover {
 .main-nav ul {
     list-style: none;
     padding: 0;
-    margin-bottom: 35px; /* Увеличиваем отступ снизу на 5px */
+    margin-bottom: 35px; 
 }
 
 .main-nav ul li {
     display: inline-block;
-    margin: 0 25px; /* Увеличиваем промежутки между элементами навигации на 5px */
+    margin: 0 25px; 
 }
 
 .main-nav ul li a {
@@ -58,11 +58,11 @@ a:hover {
 }
 
 .post {
-    margin: 45px auto; /* Увеличиваем расстояние между постами на 5px */
+    margin: 45px auto; 
     width: 70%; 
     max-width: 600px; 
     background-color: #262626; 
-    padding: 35px; /* Увеличиваем внутренние отступы на 5px */
+    padding: 35px; 
     border-radius: 10px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.7);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -76,13 +76,13 @@ a:hover {
 .post h1 {
     font-size: 24px;
     color: #d35400;
-    margin-bottom: 25px; /* Увеличиваем на 5px */
+    margin-bottom: 25px; 
 }
 
 .post img {
     width: 100%;
     border-radius: 10px;
-    margin-bottom: 25px; /* Увеличиваем на 5px */
+    margin-bottom: 25px; 
     transition: opacity 0.3s ease;
 }
 
@@ -99,21 +99,21 @@ a:hover {
 .comment {
     width: 70%; 
     max-width: 600px; 
-    margin: 65px auto; /* Увеличиваем отступ сверху на 5px */
+    margin: 65px auto; 
     background-color: #1b1b1b;
-    padding: 45px; /* Увеличиваем внутренний отступ на 5px */
+    padding: 45px; 
     border-radius: 10px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.7);
 }
 
 .comment_head h3 {
     color: #d35400;
-    margin-bottom: 30px; /* Увеличиваем на 5px */
+    margin-bottom: 30px; 
     font-size: 24px;
 }
 
 .comment_form label {
-    margin-bottom: 20px; /* Увеличиваем на 5px */
+    margin-bottom: 20px; 
     color: #e0e0e0;
 }
 
@@ -123,14 +123,14 @@ a:hover {
     background-color: #262626;
     border: 1px solid #444;
     color: #e0e0e0;
-    padding: 20px; /* Увеличиваем внутренний отступ на 5px */
-    margin-bottom: 30px; /* Увеличиваем отступ между полями на 5px */
+    padding: 20px; 
+    margin-bottom: 30px; 
     border-radius: 5px;
     width: 100%;
 }
 
 .comment_form textarea {
-    height: 175px; /* Увеличиваем высоту текстового поля на 5px */
+    height: 175px; 
     resize: none;
 }
 
@@ -138,7 +138,7 @@ a:hover {
     background-color: #d35400;
     color: #fff;
     border: none;
-    padding: 17px 30px; /* Увеличиваем размеры кнопки на 5px */
+    padding: 17px 30px; 
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s ease;
@@ -149,26 +149,26 @@ a:hover {
 }
 
 .all_comment {
-    margin-top: 55px; /* Увеличиваем отступ сверху на 5px */
+    margin-top: 55px; 
 }
 
 .all_comment h3 {
     color: #d35400;
-    margin-bottom: 30px; /* Увеличиваем на 5px */
+    margin-bottom: 30px; 
     font-size: 24px;
 }
 
 .comment_block {
     background-color: #262626;
-    padding: 35px; /* Увеличиваем внутренние отступы на 5px */
+    padding: 35px; 
     border-radius: 5px;
-    margin-bottom: 30px; /* Увеличиваем отступ между комментариями на 5px */
+    margin-bottom: 30px; 
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
 .comment_block h4 {
     color: #d35400;
-    margin-bottom: 20px; /* Увеличиваем на 5px */
+    margin-bottom: 20px; 
 }
 
 .comment_block p {
@@ -179,13 +179,13 @@ a:hover {
 
 .site-footer {
     background-color: #121212;
-    padding: 35px; /* Увеличиваем внутренний отступ на 5px */
+    padding: 35px; 
     text-align: center;
     border-top: 2px solid #d35400;
 }
 
 .footer-content {
-    margin-bottom: 25px; /* Увеличиваем отступ на 5px */
+    margin-bottom: 25px; 
 }
 
 .footer-content p {
@@ -196,7 +196,7 @@ a:hover {
 .social-links a {
     font-size: 16px;
     color: #d35400;
-    margin: 0 20px; /* Увеличиваем отступы между иконками соцсетей на 5px */
+    margin: 0 20px; 
 }
 
 .social-links a:hover {
@@ -205,7 +205,7 @@ a:hover {
 
 @media (max-width: 768px) {
     .post, .comment {
-        padding: 25px; /* Увеличиваем на 5px для мобильных устройств */
+        padding: 25px; 
     }
 
     .post h1 {
@@ -214,6 +214,6 @@ a:hover {
 
     .main-nav ul li {
         display: block;
-        margin: 20px 0; /* Увеличиваем отступы для мобильных устройств на 5px */
+        margin: 20px 0; 
     }
 }
