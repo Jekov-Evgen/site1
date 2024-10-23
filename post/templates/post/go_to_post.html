@@ -8,9 +8,64 @@
 </head>
 
 <body>
-    <h1>{{ post.update_header }}</h1>
-    <img src="{{ post.img_update.url }}"></a>
-    <p>{{ post.description_of_the_update }}</p>
+    <div class="post">
+
+        <div class="post_head">
+            <h1>{{ post.update_header }}</h1>
+        </div>
+
+        <div class="post_img">
+            <img src="{{ post.img_update.url }}"></a>
+        </div>
+
+        <div class="post_text">
+            <p>{{ post.description_of_the_update }}</p>
+        </div>
+
+    </div>
+
+    <div class="comment">
+
+        <div class="comment_head">
+            <h3>Ваше мнение или предложение</h3>
+        </div>
+        
+        <div class="comment_form">
+            <form action="{% url "comment" post.id %}" method="post">
+                {% csrf_token %}
+
+                <div class="test_com">
+                    <label>Введи свой комментарий</label>
+                    <textarea name="text"></textarea>
+                </div>
+
+                <div class ="test_nick">
+                    <label>Введи свой ник</label>
+                    <input type="text" name="name">
+                </div>
+
+                <div class="com_email">
+                    <label>Введи свой email, тогда я смогу связаться с тобой и обговорить твою идею</label>
+                    <input type="email" name="email">
+                </div>
+
+                <div class="com_but">
+                    <input type="submit">
+                </div>
+
+            </form>
+        </div>
+
+        <div class="all_comment">
+            {% for comm in comments %}
+                <div>
+                    <h4>{{ comm.name }}</h4>
+                    <p>{{ comm.text }}</p>
+                </div>
+            {% endfor %}
+        </div>
+
+    </div>
 </body>
 
 </html>

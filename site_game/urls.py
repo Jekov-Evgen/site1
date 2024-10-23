@@ -7,7 +7,8 @@ from post import views
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', views.post_submission, name="post"),
-    path('<int:pk>/', views.go_to_post, name="go_to_post")
+    path('<int:pk>/', views.go_to_post, name="go_to_post"),
+    path('comment/<int:pk>/', views.add_comment, name="comment"),
 ]
 
 if settings.DEBUG:
